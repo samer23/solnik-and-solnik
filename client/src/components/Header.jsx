@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { useLocation } from "react-router-dom"
 
+import logo from '../assets/logo.png'
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
@@ -22,7 +24,7 @@ export default function Header() {
           {/* Logo */}
           <a href="/" className="flex items-center">
             <img
-              src="/logo3.png"
+              src={logo}
               alt="Solnik & Solnik"
               className="h-28 sm:h-32 md:h-40 lg:h-46 xl:h-54 w-auto"
             />

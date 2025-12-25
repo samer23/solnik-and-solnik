@@ -1,3 +1,5 @@
+import group_photo from '../assets/group_photo.webp'
+
 export default function Home() {
     return (
     <div className="bg-white text-gray-800">
@@ -6,7 +8,7 @@ export default function Home() {
             <div className="max-w-5xl mx-auto px-4 text-center">
                 <h2 className="text-4xl font-bold text-white mb-8">Meet the Team</h2>
                 <img
-                src="/group_photo.webp"
+                src={group_photo}
                 alt="Our Team"
                 className="w-full sm:w-4/5 md:w-4/5 lg:w-3/4 xl:w-3/4 h-auto rounded-lg shadow-lg object-cover mx-auto mb-8 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
                 />

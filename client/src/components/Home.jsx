@@ -72,90 +72,101 @@ export default function Home() {
         </h2>
 
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-white">
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">CIVIL LITIGATION</span>
-                    <span>We represent individuals and businesses in civil litigation, including disputes such as breach of contract.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">COMMERCIAL LITIGATION</span>
-                    <span>We handle commercial litigation matters, including partnership disputes, employer–employee conflicts, and injunctions against former employees.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">CORPORATE</span>
-                    <span>We represent clients from small businesses to large corporations, offering services from basic incorporations to complex reorganizations and mergers and acquisitions.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">DEBT COLLECTION</span>
-                    <span>We represent individuals and corporations seeking to collect debts arising from promissory notes, mortgages, and other loan transactions.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">EMPLOYMENT LAW</span>
-                    <span>We represent both employers and employees, providing advice on wrongful dismissal, termination issues, and severance packages.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">GENERAL COUNSEL</span>
-                    <span>We represent small and mid-sized businesses that need ongoing legal support without a full-time in-house lawyer, providing general assistance across a wide range of matters.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">MEDICAL MALPRACTICE</span>
-                    <span>We handle serious medical malpractice cases and advises clients to contact the firm promptly for proper assistance.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">POWER OF ATTORNEY</span>
-                    <span>A Power of Attorney is a document that allows you to appoint someone to act on your behalf during your lifetime.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">PRODUCT LIABILITY</span>
-                    <span>If you or a loved one has been injured by a defective product, contact Solnik and Solnik for a free initial consultation and advice on your legal rights.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">REAL ESTATE</span>
-                    <span>We have over 50 years of experience advising buyers and sellers on residential and commercial real estate transactions.</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">PERSONAL INJURY</span>
-                    <span>We have been assisting people who have been injured and whose loved ones have been killed, and/or who are experiencing difficulties with their insurance companies</span>
-                </div>
-            </li>
-            <li className="flex flex-col sm:flex-row items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
-                <span className="text-green-400 font-bold">•</span>
-                <div>
-                    <span className="font-bold block">WILLS & ESTATES</span>
-                    <span>We have over 55 years of experience in estate planning and handling wills and estate matters.</span>
-                </div>
-            </li>
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">CIVIL LITIGATION</span>
+            <span>We represent individuals and businesses in civil litigation, including disputes such as breach of contract.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">COMMERCIAL LITIGATION</span>
+            <span>We handle commercial litigation matters, including partnership disputes, employer–employee conflicts, and injunctions against former employees.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">CORPORATE</span>
+            <span>We represent clients from small businesses to large corporations, offering services from basic incorporations to complex reorganizations and mergers and acquisitions.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">DEBT COLLECTION</span>
+            <span>We represent individuals and corporations seeking to collect debts arising from promissory notes, mortgages, and other loan transactions.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">EMPLOYMENT LAW</span>
+            <span>We represent both employers and employees, providing advice on wrongful dismissal, termination issues, and severance packages.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">GENERAL COUNSEL</span>
+            <span>We represent small and mid-sized businesses that need ongoing legal support without a full-time in-house lawyer, providing general assistance across a wide range of matters.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">MEDICAL MALPRACTICE</span>
+            <span>We handle serious medical malpractice cases and advise clients to contact the firm promptly for proper assistance.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">POWER OF ATTORNEY</span>
+            <span>A Power of Attorney is a document that allows you to appoint someone to act on your behalf during your lifetime.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">PRODUCT LIABILITY</span>
+            <span>If you or a loved one has been injured by a defective product, contact Solnik and Solnik for a free initial consultation and advice on your legal rights.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">REAL ESTATE</span>
+            <span>We have over 50 years of experience advising buyers and sellers on residential and commercial real estate transactions.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">PERSONAL INJURY</span>
+            <span>We have been assisting people who have been injured and whose loved ones have been killed, and/or who are experiencing difficulties with their insurance companies.</span>
+            </div>
+        </li>
+
+        <li className="flex items-start gap-3 p-4 rounded-lg transition transform hover:scale-105 hover:bg-blue-800 hover:shadow-lg">
+            <span className="text-green-400 font-bold mt-1">•</span>
+            <div>
+            <span className="font-bold block">WILLS & ESTATES</span>
+            <span>We have over 55 years of experience in estate planning and handling wills and estate matters.</span>
+            </div>
+        </li>
         </ul>
         </section>
       

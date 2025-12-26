@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function Footer() {
   return (
     <footer className="bg-gray-50 border-t border-gray-200">
@@ -31,8 +33,16 @@ export default function Footer() {
           {/* Legal */}
           <div>
             <ul className="mt-3 space-y-2">
-              <li><a href="/about" className="text-blue-900 hover:text-yellow-500 transition footer-link">Terms of Services</a></li>
-              <li><a href="/contact" className="text-blue-900 hover:text-yellow-500 transition footer-link">Privacy Policy</a></li>
+              <li>
+                <Link to="/privacy-policy" className="text-blue-900 hover:text-yellow-500 transition footer-link">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/terms-of-service" className="text-blue-900 hover:text-yellow-500 transition footer-link">
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
 

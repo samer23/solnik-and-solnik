@@ -1,23 +1,41 @@
-import { useState } from 'react'
-import './App.css'
+import { Routes, Route } from "react-router-dom"
+import { BrowserRouter } from "react-router-dom";
 
+import ScrollToTop from "./components/ScrollToTop.jsx";
 import Header from './components/header.jsx'
 import Footer from './components/footer.jsx'
-import Home from './components/Home.jsx'
-import AboutUs from './components/AboutUs.jsx'
+import PrivacyPolicy from './components/PrivacyPolicy.jsx'
+import TermsOfService from './components/TermsOfServices.jsx'
+import Home from './pages/Home.jsx'
+import AboutUs from './pages/AboutUs.jsx'
+import NotFound from './pages/NotFound.jsx'
+import ContactUs from './pages/ContactUs.jsx'
+import News from './pages/News.jsx'
+import Resources from './pages/Resources.jsx'
+import Services from './pages/Services.jsx'
 
 function App() {
-  const [currPage, setCurrPage] = useState("Home")
-
   return (
-    <div>
+    <BrowserRouter>
+      <ScrollToTop />
       < Header />
-      {
-        currPage === "Home" ? (< Home />) :
-        currPage === "AboutUs" ? (<AboutUs />) : null
-      }
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/resources" element={<Resources />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+
+          {/* Legal pages */}
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
+
+          {/* 404 */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       < Footer />
-    </div>
+    </BrowserRouter>
   )
 }
 

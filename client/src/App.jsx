@@ -13,6 +13,7 @@ import ContactUs from './pages/ContactUs.jsx'
 import News from './pages/News.jsx'
 import Resources from './pages/Resources.jsx'
 import Services from './pages/Services.jsx'
+import DisplayService from "./components/DisplayService.jsx";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/display-service/:id" element={<DisplayService />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/news" element={<News />} />
           <Route path="/contact-us" element={<ContactUs />} />

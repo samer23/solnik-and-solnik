@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom"
 
 import group_photo from '../assets/group_photo.webp'
+import SubmitEmail from "../components/SubmitEmail"
 
 export default function Home() {
+
     return (
     <div className="bg-white text-gray-800">
         {/* Top Section: Meet the Team */}
@@ -40,28 +42,41 @@ export default function Home() {
                 <p className="text-white mb-4">
                 Reach out today to schedule a consultation with one of our professionals.
                 </p>
-                <form className="space-y-4">
-                <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-                <textarea
-                    placeholder="Your Message"
-                    className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    rows={4}
-                />
-                <button
-                    type="submit"
-                    className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-500 transition"
-                >
-                    Send Message
-                </button>
+                <form onSubmit={SubmitEmail} className="space-y-4">
+                    <input
+                        name="name"
+                        type="text"
+                        placeholder="Your Name"
+                        className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required
+                    />
+                    <input
+                        name="email"
+                        type="email"
+                        placeholder="Your Email"
+                        className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required
+                    />
+                    <input
+                        name="subject"
+                        type="text"
+                        placeholder="Subject"
+                        className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        required
+                    />
+                    <textarea
+                        name="message"
+                        placeholder="Your Message"
+                        className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        rows={4}
+                        required
+                    />
+                    <button
+                        type="submit"
+                        className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-500 transition"
+                    >
+                        Send Message
+                    </button>
                 </form>
             </div>
             </div>
@@ -74,7 +89,7 @@ export default function Home() {
             </h2>
             
             <p className="mt-4 text-gray-300 max-w-3xl mx-auto text-center pb-6">
-                Head to our <Link to="/services" className="text-yellow-400 hover:text-yellow-200 transition footer-link">services page</Link> to learn more about all that we offer.
+                Head to our <Link to="/services" className="text-yellow-400 hover:text-yellow-200 transition footer-link">Services</Link> page to learn more about all that we offer.
             </p>
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-white">

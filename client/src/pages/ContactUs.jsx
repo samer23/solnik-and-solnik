@@ -1,24 +1,6 @@
-import { useState } from "react";
+import SubmitEmail from "../components/SubmitEmail"
 
 export default function ContactUs() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // TODO: handle form submission (e.g., send to email or backend)
-    alert("Thank you! Your message has been submitted.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
-
   return (
     <div className="mx-auto max-w-6xl px-6 py-16">
       {/* Page Header */}
@@ -32,16 +14,15 @@ export default function ContactUs() {
 
       <div className="grid md:grid-cols-2 gap-12">
         {/* Contact Form */}
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={SubmitEmail} className="space-y-6">
           <div>
             <label className="block text-gray-700 font-medium mb-1" htmlFor="name">
               Name
             </label>
             <input
-              type="text"
               name="name"
-              value={formData.name}
-              onChange={handleChange}
+              type="text"
+              placeholder="Your Name"            
               required
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
@@ -52,24 +33,23 @@ export default function ContactUs() {
               Email
             </label>
             <input
-              type="email"
               name="email"
-              value={formData.email}
-              onChange={handleChange}
+              type="email"
+              placeholder="Your Email Address"
               required
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
           </div>
 
           <div>
-            <label className="block text-gray-700 font-medium mb-1" htmlFor="phone">
-              Phone
+            <label className="block text-gray-700 font-medium mb-1" htmlFor="subject">
+              Subject
             </label>
             <input
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
+              name="subject"
+              type="text"
+              placeholder="Subject"
+              required
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
             />
           </div>
@@ -80,8 +60,8 @@ export default function ContactUs() {
             </label>
             <textarea
               name="message"
-              value={formData.message}
-              onChange={handleChange}
+              type="text"
+              placeholder="Your Message"
               rows="5"
               required
               className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
@@ -100,7 +80,7 @@ export default function ContactUs() {
         <div className="space-y-6 text-gray-700">
           <h2 className="text-2xl font-semibold text-blue-900">Our Office</h2>
           <p>
-            <strong>Address:</strong> 123 Legal St, Suite 400, Toronto, ON, M5J 2N1
+            <strong>Address:</strong> 2991 Dundas St W, Toronto, ON M6P 1Z4
           </p>
           <p>
             <strong>Phone:</strong>{" "}
@@ -116,11 +96,10 @@ export default function ContactUs() {
           </p>
 
           <h3 className="text-xl font-semibold text-blue-900">Office Hours</h3>
-          <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
-          <p>Saturday: By Appointment</p>
-          <p>Sunday: Closed</p>
+          <p>Monday – Friday: 9:00 AM – 5:00 PM</p>
+          <p>Saturday - Sunday: Closed</p>
         </div>
       </div>
     </div>
-  );
+  )
 }

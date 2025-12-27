@@ -1,10 +1,11 @@
 import manny_solnik from '../assets/team_members/manny_solnik.jpg'
+import group_photo from '../assets/group_photo.webp'
 
 export default function AboutUs() {
   const team = [
     {
       name: "Manny Solnik",
-      title: "Founding Partner",
+      title: "Senior Partner & Lawyer at Solnik & Solnik Professional Corp",
       bio: `Manny S. Solnik was born in Toronto and graduated from York University in 1988. He graduated from Law School at the University of Alberta in 1991. He was called
       to the Ontario Bar in 1993. Manny is a lawyer, notary and Senior Partner of Solnik and Solnik Professional Corporation. Manny’s practice focuses primarily in the areas
       of Litigation including Serious Personal Injury, Wrongful Death, Medical Malpractice Litigation, Employment Law, Wrongful Dismissal, Human Rights and Civil Litigation.
@@ -13,17 +14,17 @@ export default function AboutUs() {
       of Directors of the Junction Business Improvement Area in Toronto and is a member of the Law Society of Upper Canada, The Ontario Bar Association, The Canadian Bar
       Association, the Advocates Society, the American Association of Justice, the Ontario Trial Lawyers Association and the Toronto Lawyers Association. Manny has appeared
       before the Ontario Court of Appeal and at all levels of Ontario Trial Courts. Manny has appeared at hearings in front of various boards and tribunals.`,
-      image: {manny_solnik},
+      image: manny_solnik,
     },
     {
       name: "Sidney Solnik (Retired)",
-      title: "Partner",
+      title: "Partner & Lawyer at Solnik & Solnik Professional Corp",
       bio: `Sidney Solnik was born in Toronto and graduated as a pharmacist in 1957. He became a lawyer and Notary and graduated from Osgoode Hall Law School in 1961.
       He is the founder and a senior partner of Solnik and Solnik Professional Corporation which has been serving the West Toronto Community for about 50 years.
       Mr. Solnik’s practice focuses on the areas of Real Estate, Wills and Estates including Estate Planning and Tax planning, complex commercial transactions and commercial
       litigation and appearance before various tribunals. Mr. Solnik is Past Chair of the Junction Business Improvement Area in Toronto, a member of the Toronto lawyers
       association, Ontario Bar Association and Canadian Bar Association. Mr. Solnik has appeared in many levels of Courts in Ontario.`,
-      image: "/images/jane-solnik.jpg",
+      image: group_photo,
     }
   ]
 
